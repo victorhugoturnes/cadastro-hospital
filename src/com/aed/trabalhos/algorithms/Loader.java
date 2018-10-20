@@ -1,5 +1,6 @@
 package com.aed.trabalhos.algorithms;
 
+import com.aed.trabalhos.estruturas.Btree;
 import com.aed.trabalhos.estruturas.Register;
 
 import java.io.*;
@@ -12,9 +13,11 @@ public class Loader extends Algorithm {
     private String directory = System.getProperty("user.dir") + "\\inputs\\";
     private String line;
     private Matcher matcher;
+    private Btree tree;
 
     @Override
-    public void run() {
+    public void run(Btree tree) {
+        this.tree = tree;
         File folder = new File(directory);
         for (File file : Objects.requireNonNull(folder.listFiles())) {
             parse(file);
@@ -25,7 +28,7 @@ public class Loader extends Algorithm {
     private void parse(File file) {
         try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
             while ((line = reader.readLine()) != null) {
-                Inserter.insert(parseLine());
+                Inserter.insert(parseLine(), tree);
             }
         } catch (Exception e) {
             e.printStackTrace();
