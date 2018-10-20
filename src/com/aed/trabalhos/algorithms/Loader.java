@@ -11,6 +11,7 @@ public class Loader extends Algorithm {
 
     private String directory = System.getProperty("user.dir") + "\\inputs\\";
     private String line;
+    private Matcher matcher;
 
     @Override
     public void run() {
@@ -31,23 +32,25 @@ public class Loader extends Algorithm {
         }
     }
 
-    private Register parseLine(){
+    private Register parseLine() {
+        matcher = Pattern.compile("([^:]*:?)").matcher(line);
         Register doc = new Register();
-        Matcher matcher = Pattern.compile("([^:]*:?)").matcher(line);
-        if(matcher.find()){
-            doc.setCodigo(Integer.parseInt(matcher.group().replace(":", " ").trim()));
-            doc.setNome(matcher.group().replace(":", " ").trim());
-            doc.setSexo(matcher.group().replace(":", " ").trim());
-            doc.setCpf(matcher.group().replace(":", " ").trim());
-            doc.setCrm(matcher.group().replace(":", " ").trim());
-            doc.setEspecialidade(matcher.group().replace(":", " ").trim());
-            doc.setRg(matcher.group().replace(":", " ").trim());
-            doc.setTelefone(matcher.group().replace(":", " ").trim());
-            doc.setCelular(matcher.group().replace(":", " ").trim());
-            doc.setEmail(matcher.group().replace(":", " ").trim());
-            doc.setEndereco(matcher.group().replace(":", " ").trim());
-            doc.setDataNascimento(matcher.group().replace(":", " ").trim());
-        }
+        doc.setCodigo(Integer.parseInt(parameter()));
+        doc.setNome(parameter());
+        doc.setSexo(parameter());
+        doc.setCpf(parameter());
+        doc.setCrm(parameter());
+        doc.setEspecialidade(parameter());
+        doc.setRg(parameter());
+        doc.setTelefone(parameter());
+        doc.setCelular(parameter());
+        doc.setEmail(parameter());
+        doc.setEndereco(parameter());
+        doc.setDataNascimento(parameter());
         return doc;
+    }
+
+    private String parameter() {
+        return matcher.find() ? matcher.group().replace(":", " ").trim() : "";
     }
 }

@@ -2,6 +2,8 @@ package com.aed.trabalhos.algorithms;
 
 import com.aed.trabalhos.estruturas.Register;
 
+import java.util.Scanner;
+
 public class Inserter extends Algorithm{
     static void insert(Register doc) {
         System.out.println(doc);
@@ -9,6 +11,37 @@ public class Inserter extends Algorithm{
 
     @Override
     public void run() {
-        System.out.println("Inserted");
+        insert(grab());
+    }
+
+    private Register grab() {
+        Register doc = new Register();
+        System.out.println("Por favor insira o codigo:");
+        Scanner scan = new Scanner(System.in);
+        doc.setCodigo(scan.nextInt());
+        System.out.println("Por favor insira o nome");
+        doc.setNome(scan.next());
+        System.out.println("Por favor insira o sexo");
+        doc.setSexo(scan.next());
+        System.out.println("Por favor insira o cpf");
+        doc.setCpf(scan.next());
+        System.out.println("Por favor insira o crm");
+        doc.setCrm(scan.next());
+        System.out.println("Por favor insira a especialidade");
+        doc.setEspecialidade(scan.next());
+        System.out.println("Por favor insira o rg");
+        doc.setRg(scan.next());
+        System.out.println("Por favor insira o telefone");
+        doc.setTelefone(scan.next());
+        System.out.println("Por favor insira o celular");
+        doc.setCelular(scan.next());
+        System.out.println("Por favor insira o email");
+        doc.setEmail(scan.next());
+        System.out.println("Por favor insira o endereco");
+        doc.setEndereco(scan.next());
+        System.out.println("Por favor insira a data de nascimento");
+        doc.setDataNascimento(scan.next());
+
+        return null;
     }
 }

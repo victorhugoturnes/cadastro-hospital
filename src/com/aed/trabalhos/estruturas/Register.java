@@ -1,6 +1,8 @@
 package com.aed.trabalhos.estruturas;
 
-public class Register {
+import java.io.Serializable;
+
+public class Register implements Serializable {
     private int codigo;
     private String nome, sexo, cpf, crm, especialidade, rg, telefone, celular, email, endereco, dataNascimento;
 
@@ -104,17 +106,17 @@ public class Register {
     public String toString() {
         return "Register{" +
                 "codigo=" + codigo +
-                ", nome='" + nome + '\'' +
-                ", sexo='" + sexo + '\'' +
-                ", cpf='" + cpf + '\'' +
-                ", crm='" + crm + '\'' +
-                ", especialidade='" + especialidade + '\'' +
-                ", rg='" + rg + '\'' +
-                ", telefone='" + telefone + '\'' +
-                ", celular='" + celular + '\'' +
-                ", email='" + email + '\'' +
-                ", endereco='" + endereco + '\'' +
-                ", dataNascimento='" + dataNascimento + '\'' +
+                " nome='" + nome + '\'' +
+                " sexo='" + sexo + '\'' +
+                " cpf='" + cpf + '\'' +
+                " crm='" + crm + '\'' +
+                " especialidade='" + especialidade + '\'' +
+                " rg='" + rg + '\'' +
+                " telefone='" + telefone + '\'' +
+                " celular='" + celular + '\'' +
+                " email='" + email + '\'' +
+                " endereco='" + endereco + '\'' +
+                " dataNascimento='" + dataNascimento + '\'' +
                 '}';
     }
 }
