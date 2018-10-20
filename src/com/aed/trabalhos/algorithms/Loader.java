@@ -16,12 +16,14 @@ public class Loader extends Algorithm {
     private Btree tree;
 
     @Override
-    public void run(Btree tree) {
+    public Btree run(Btree tree) {
         this.tree = tree;
         File folder = new File(directory);
         for (File file : Objects.requireNonNull(folder.listFiles())) {
             parse(file);
         }
+        System.out.println(tree);
+        return tree;
     }
 
     private void parse(File file) {

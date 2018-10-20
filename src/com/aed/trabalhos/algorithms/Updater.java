@@ -4,7 +4,8 @@ import com.aed.trabalhos.estruturas.Btree;
 
 public class Updater extends Algorithm {
     @Override
-    public void run(Btree tree) {
+    public Btree run(Btree tree) {
         System.out.println("updated");
+        return tree;
     }
 }

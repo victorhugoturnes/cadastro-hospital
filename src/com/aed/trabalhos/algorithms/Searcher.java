@@ -5,8 +5,9 @@ import com.aed.trabalhos.estruturas.Register;
 
 public class Searcher extends Algorithm {
     @Override
-    public void run(Btree tree) {
+    public Btree run(Btree tree) {
         System.out.println("Searched");
+        return tree;
     }
 
     public Register find() {

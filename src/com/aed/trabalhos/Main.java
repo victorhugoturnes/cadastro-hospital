@@ -15,7 +15,7 @@ public class Main {
 //        Algorithm algorithm = Menu.ParseInput();
 //        Objects.requireNonNull(algorithm).run(tree);
         Loader loader = new Loader();
-        loader.run(tree);
+        System.out.println(loader.run(tree));
 //        System.out.println(tree);
     }
 }

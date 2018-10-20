@@ -11,13 +11,15 @@ public class Inserter extends Algorithm {
 //        System.out.println(doc);
 //        System.out.println(i++);
         tree = tree.addKey(doc);
+        System.out.println();
         System.out.println(tree);
         return tree;
     }
 
     @Override
-    public void run(Btree tree) {
+    public Btree run(Btree tree) {
         insert(grab(), tree);
+        return tree;
     }
 
     private Register grab() {
