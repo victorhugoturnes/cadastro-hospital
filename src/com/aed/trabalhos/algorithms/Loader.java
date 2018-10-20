@@ -22,14 +22,14 @@ public class Loader extends Algorithm {
         for (File file : Objects.requireNonNull(folder.listFiles())) {
             parse(file);
         }
-        System.out.println(tree);
-        return tree;
+        return this.tree;
     }
 
     private void parse(File file) {
         try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
             while ((line = reader.readLine()) != null) {
                 tree = Inserter.insert(parseLine(), tree);
+//                System.out.println(tree);
             }
         } catch (Exception e) {
             e.printStackTrace();

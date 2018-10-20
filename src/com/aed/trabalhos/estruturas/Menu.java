@@ -32,8 +32,7 @@ public class Menu {
                 TreePrinter.printRegister(new Searcher().find());
                 return null;
             case 7:
-                TreePrinter.printTree();
-                return null;
+                return new TreePrinter();
             default:
                 return null;
         }

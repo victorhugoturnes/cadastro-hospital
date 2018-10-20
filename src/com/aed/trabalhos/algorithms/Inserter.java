@@ -11,8 +11,7 @@ public class Inserter extends Algorithm {
 //        System.out.println(doc);
 //        System.out.println(i++);
         tree = tree.addKey(doc);
-        System.out.println();
-        System.out.println(tree);
+//        System.out.println(tree);
         return tree;
     }
 

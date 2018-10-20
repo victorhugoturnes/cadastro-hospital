@@ -10,12 +10,20 @@ import java.util.Objects;
 public class Main {
 
     public static void main(String[] args) {
-//        Menu.printMenu();
-        Btree tree = new Btree();
-//        Algorithm algorithm = Menu.ParseInput();
-//        Objects.requireNonNull(algorithm).run(tree);
-        Loader loader = new Loader();
-        System.out.println(loader.run(tree));
-//        System.out.println(tree);
+
+        try {
+            Btree tree = new Btree();
+            while (true) {
+                Menu.printMenu();
+                Algorithm algorithm = Menu.ParseInput();
+                tree = Objects.requireNonNull(algorithm).run(tree);
+            }
+        } catch (Exception e) {
+
+        }
+
+//        Btree tree = new Btree();
+//        Loader loader = new Loader();
+//        System.out.println(loader.run(tree));
     }
 }
