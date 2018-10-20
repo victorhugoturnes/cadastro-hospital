@@ -6,9 +6,12 @@ import com.aed.trabalhos.estruturas.Register;
 import java.util.Scanner;
 
 public class Inserter extends Algorithm {
+    private static int i = 0;
     static Btree insert(Register doc, Btree tree) {
-
-
+//        System.out.println(doc);
+//        System.out.println(i++);
+        tree = tree.addKey(doc);
+        System.out.println(tree);
         return tree;
     }
 

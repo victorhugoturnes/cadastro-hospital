@@ -22,13 +22,12 @@ public class Loader extends Algorithm {
         for (File file : Objects.requireNonNull(folder.listFiles())) {
             parse(file);
         }
-
     }
 
     private void parse(File file) {
         try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
             while ((line = reader.readLine()) != null) {
-                Inserter.insert(parseLine(), tree);
+                tree = Inserter.insert(parseLine(), tree);
             }
         } catch (Exception e) {
             e.printStackTrace();
