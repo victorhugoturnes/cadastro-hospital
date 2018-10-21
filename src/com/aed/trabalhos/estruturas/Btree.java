@@ -6,10 +6,10 @@ import java.util.Collections;
 
 public class Btree implements Serializable, Comparable<Btree> {
 
-    private final int maxSize = 4;
+    protected final int maxSize = 4;
     private final int overflow = 1;
-    private final ArrayList<Integer> keys;
-    private final ArrayList<Btree> child;
+    public final ArrayList<Integer> keys;
+    public final ArrayList<Btree> child;
     private static int k = 0;
 
     public Btree() {
@@ -28,7 +28,7 @@ public class Btree implements Serializable, Comparable<Btree> {
         return this;
     }
 
-    private Boolean addKey(int key) {
+    public Boolean addKey(int key) {
 //        System.out.println("adding " + key + " to " + this);
         if (child.size() == 0) {
             keys.add(key);
