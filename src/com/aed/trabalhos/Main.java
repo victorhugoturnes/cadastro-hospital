@@ -6,7 +6,9 @@ import com.aed.trabalhos.estruturas.BinFile;
 import com.aed.trabalhos.estruturas.Btree;
 import com.aed.trabalhos.estruturas.Menu;
 
+import java.util.ArrayList;
 import java.util.Objects;
+import java.util.Random;
 
 public class Main {
 
@@ -14,7 +16,6 @@ public class Main {
 
         Btree tree = new Btree();
 
-        /*
         Btree child1 = new Btree();
         Btree child2 = new Btree();
         Btree child3 = new Btree();
@@ -40,12 +41,15 @@ public class Main {
         child3.addKey(600);
 
         BinFile binfile = new BinFile();
-        binfile.saveTree(tree, "arvoreB.txt");
-        */
+        binfile.saveNode(binfile, tree, "node.txt");
 
+        binfile.loadNode(binfile, "node.txt");
+
+        /*
         BinFile binfile = new BinFile();
         tree = binfile.loadTree("arvoreB.txt");
         System.out.println(tree.toString());
+        */
 
         /*
         try {
