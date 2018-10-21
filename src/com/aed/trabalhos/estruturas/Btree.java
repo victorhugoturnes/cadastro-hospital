@@ -8,7 +8,6 @@ public class Btree implements Serializable, Comparable<Btree> {
 
     protected final int maxSize = 4;
     private final int overflow = 1;
-    public int nodeID; // para fins de arquivo somente
     public final ArrayList<Integer> keys;
     public final ArrayList<Btree> child;
     private static int k = 0;
@@ -16,7 +15,6 @@ public class Btree implements Serializable, Comparable<Btree> {
     public Btree() {
         this.keys = new ArrayList<>();
         this.child = new ArrayList<>();
-        this.nodeID = -1;
     }
 
     public Btree addKey(Register doc) {

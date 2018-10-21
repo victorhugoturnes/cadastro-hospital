@@ -1,24 +1,14 @@
 package com.aed.trabalhos.estruturas;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.Random;
+import java.util.HashMap;
+import java.util.Map;
 
 public class BinFile implements Serializable{
     private Header cabecalho;
-
-    private static int MAX = 1000;
-    public int ID;
-    public ArrayList<Integer> keys;
-    public ArrayList<Integer> childID;
-    public ArrayList<Integer> ExistingIDs;
-    public int prox;
+    public static Map<Integer, Register> registerMap = new HashMap<>();
 
     public BinFile() {
-        this.keys = new ArrayList<>();
-        this.childID = new ArrayList<>();
-        this.ExistingIDs = new ArrayList<>();
-        this.cabecalho = new Header();
     }
 
     public void newListingFile(String filename){
@@ -26,64 +16,41 @@ public class BinFile implements Serializable{
         cabecalho.write(cabecalho, filename);
     }
 
-    public int setID() {
-        Random generator = new Random();
-        int id = generator.nextInt(MAX+1);
-        while(ExistingIDs.contains(id)){
-            id = generator.nextInt(MAX+1);
-        }
-        ExistingIDs.add(id);
-        return id;
+    public void addRegister(Register doc){
+        registerMap.put(doc.getCodigo(), doc);
     }
 
-    public void saveNode(BinFile FileNode, Btree node, String filename){
-        if(node.nodeID == -1)
-            node.nodeID = setID();
-            System.out.println("nodeID = " + node.nodeID);
+    public void deleteRegister(Register doc){
+        registerMap.remove(doc.getCodigo());
+    }
 
-        if (!node.child.isEmpty()) {
-            for (int i = 0; i < node.child.size(); i++) {
-                if(node.child.get(i).nodeID == -1)
-                    node.child.get(i).nodeID = setID();
-                    FileNode.childID.add( node.child.get(i).nodeID );
-                    System.out.println("childID = " + node.child.get(i).nodeID);
-            }
-        }
-        System.out.println("childIDS = " + FileNode.childID.toString());
-        System.out.println("nodeKeys = " + node.keys.toString());
-        FileNode.ID = node.nodeID;
-        FileNode.keys = (ArrayList<Integer>) node.keys.clone();
-
+    public void saveRegister(String filename){
         try {
-            FileOutputStream fout = new FileOutputStream(filename, true);
+            FileOutputStream fout = new FileOutputStream(filename);
             ObjectOutputStream obj = new ObjectOutputStream(fout);
-            obj.writeObject(FileNode);
+            obj.writeObject(registerMap);
             obj.close();
+            System.out.println("Salvado com sucesso!");
         } catch(Exception e){
+            System.out.println("Erro ao salvar.");
         }
     }
 
-    public void loadNode(BinFile FileNode, String filename){
-        Header cabecalho = new Header();
+    public Register loadRegister(int code ,String filename){
+        Register doc = new Register();
         try {
             FileInputStream fin = new FileInputStream(filename);
             ObjectInputStream obj = new ObjectInputStream(fin);
-            cabecalho = (Header) obj.readObject();
-            FileNode = (BinFile) obj.readObject();
+            registerMap = (HashMap) obj.readObject();
             obj.close();
+            System.out.println("Carregado com sucesso!");
         } catch(Exception e){
+            System.out.println("Erro ao carregar.");
         }
-        System.out.println(cabecalho.toString());
-        System.out.println(FileNode.toString());
+        doc = registerMap.get(code);
+        return doc;
     }
 
-    @Override
-    public String toString() {
-        return "NodeID:" + ID + "\nChaves:" + keys.toString() + "\nChaves dos filhos: " + childID.toString();
-    }
-
-    /*
-    // Falta fazer funcionar com o cabecalho
     public void saveTree(Btree btree, String filename){
         try {
             FileOutputStream fout = new FileOutputStream(filename);
@@ -96,7 +63,7 @@ public class BinFile implements Serializable{
         }
     }
 
-    // Falta fazer funcionar com o cabecalho
+
     public Btree loadTree(String filename){
         Btree btree = new Btree();
         try {
@@ -110,5 +77,6 @@ public class BinFile implements Serializable{
         }
         return btree;
     }
-    */
 }
+
+

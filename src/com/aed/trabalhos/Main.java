@@ -1,12 +1,11 @@
 package com.aed.trabalhos;
 
+
 import com.aed.trabalhos.algorithms.Algorithm;
 import com.aed.trabalhos.algorithms.Loader;
-import com.aed.trabalhos.estruturas.BinFile;
-import com.aed.trabalhos.estruturas.Btree;
-import com.aed.trabalhos.estruturas.Header;
-import com.aed.trabalhos.estruturas.Menu;
+import com.aed.trabalhos.estruturas.*;
 
+import java.lang.instrument.Instrumentation;
 import java.util.ArrayList;
 import java.util.Objects;
 import java.util.Random;
@@ -14,14 +13,7 @@ import java.util.Random;
 public class Main {
 
     public static void main(String[] args) {
-        BinFile binfile = new BinFile();
-        Header cabecalho = new Header();
-
-        binfile.newListingFile("cabecalho.txt");
-
-        cabecalho = cabecalho.read(cabecalho, "cabecalho.txt");
-        System.out.println(cabecalho.toString());
-
+        /*
         Btree tree = new Btree();
 
         Btree child1 = new Btree();
@@ -47,17 +39,8 @@ public class Main {
         child3.addKey(500);
         child3.addKey(550);
         child3.addKey(600);
-
-        binfile.saveNode(binfile, tree, "node.txt");
-
-        binfile.loadNode(binfile, "node.txt");
-
-        /*
-        BinFile binfile = new BinFile();
-        tree = binfile.loadTree("arvoreB.txt");
-        System.out.println(tree.toString());
         */
-
+        
         /*
         try {
             Btree tree = new Btree();
@@ -70,7 +53,6 @@ public class Main {
 
         }
         */
-
 
 //        Btree tree = new Btree();
 //        Loader loader = new Loader();
