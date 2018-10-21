@@ -4,19 +4,26 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class BinFile {
-    //private Header cabecalho;
+public class BinFile implements Serializable{
+    private Header cabecalho;
 
     private static int MAX = 1000;
     public int ID;
     public ArrayList<Integer> keys;
     public ArrayList<Integer> childID;
     public ArrayList<Integer> ExistingIDs;
+    public int prox;
 
     public BinFile() {
         this.keys = new ArrayList<>();
         this.childID = new ArrayList<>();
         this.ExistingIDs = new ArrayList<>();
+        this.cabecalho = new Header();
+    }
+
+    public void newListingFile(String filename){
+        Header cabecalho = new Header();
+        cabecalho.write(cabecalho, filename);
     }
 
     public int setID() {
@@ -48,7 +55,7 @@ public class BinFile {
         FileNode.keys = (ArrayList<Integer>) node.keys.clone();
 
         try {
-            FileOutputStream fout = new FileOutputStream(filename);
+            FileOutputStream fout = new FileOutputStream(filename, true);
             ObjectOutputStream obj = new ObjectOutputStream(fout);
             obj.writeObject(FileNode);
             obj.close();
@@ -57,13 +64,16 @@ public class BinFile {
     }
 
     public void loadNode(BinFile FileNode, String filename){
+        Header cabecalho = new Header();
         try {
             FileInputStream fin = new FileInputStream(filename);
             ObjectInputStream obj = new ObjectInputStream(fin);
+            cabecalho = (Header) obj.readObject();
             FileNode = (BinFile) obj.readObject();
             obj.close();
         } catch(Exception e){
         }
+        System.out.println(cabecalho.toString());
         System.out.println(FileNode.toString());
     }
 
