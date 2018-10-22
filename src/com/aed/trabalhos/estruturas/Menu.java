@@ -4,7 +4,11 @@ import com.aed.trabalhos.algorithms.*;
 
 import java.util.Scanner;
 
+// Classe responsavel por controlar o programa e efetuar chamadas dos algoritmos
 public class Menu {
+
+    // Imprime um Menu ao usuario
+    // - O menu apresenta as opcoes disponiveis de cadastro de medicos
     public static void printMenu() {
         System.out.println("(1)Carregar arquivo de inicializacao:\n"
                 + "(2)Inserir Medico:\n"
@@ -15,24 +19,27 @@ public class Menu {
                 + "(7)Imprimir Arvore B:\n");
     }
 
+    // Parser para o Menu
+    // - Le um inteiro inserido pelo usuario, de acordo com as opcoes dispostas no metodo printMenu()
+    // - Realiza a chamada do metodo equivalente
     public static Algorithm ParseInput() {
         Scanner scan = new Scanner(System.in);
         switch (scan.nextInt()) {
             case 1:
-                return new Loader();
+                return new Loader();    // Carrega arquivo de inicializacao
             case 2:
-                return new Inserter();
+                return new Inserter();  // Insere um registro de medico
             case 3:
-                return new Updater();
+                return new Updater();   // Altera um registro de medico
             case 4:
-                return new Searcher();
+                return new Searcher();  // Busca um registro de medico
             case 5:
-                return new Deleter();
+                return new Deleter();   // Remove um registro de medico
             case 6:
-//                TreePrinter.printRegister(new Searcher().find());
+//                TreePrinter.printRegister(new Searcher().find());     // Imprime um registro de medico
                 return null;
             case 7:
-                return new TreePrinter();
+                return new TreePrinter();   // Imprime a Arvore B
             default:
                 return null;
         }
