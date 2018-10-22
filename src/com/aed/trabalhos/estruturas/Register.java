@@ -16,7 +16,7 @@ public class Register implements Serializable {
 
     // <- Inicio Getters e Setters ->
     // retorna o codigo de um doutor
-    int getCodigo() {
+    public int getCodigo() {
         return codigo;
     }
 

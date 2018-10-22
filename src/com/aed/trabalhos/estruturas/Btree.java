@@ -34,13 +34,14 @@ public class Btree implements Serializable, Comparable<Btree> {
     }
 
     public Register getRegister(int key) {
+        updateData();
         return data.containsKey(key)
                 ? data.get(key)
                 : new Register();
     }
 
     public void updateData() {
-        data.clear();
+        data = new HashMap<>();
         keys.forEach(key -> data.put(key, BinFile.getRegister(key)));
     }
 
@@ -95,7 +96,7 @@ public class Btree implements Serializable, Comparable<Btree> {
             if (key < keys.get(i)) return child.isEmpty() ? null : child.get(i);
             else if (key == keys.get(i)) return this;
         }
-        return child.get(child.size() - 1);
+        return child.isEmpty() ? null : child.get(child.size() - 1);
     }
 
     @Override

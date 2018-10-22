@@ -28,8 +28,12 @@ public class BinFile implements Serializable {
         registerMap.remove(doc.getCodigo());
     }
 
-    public void saveRegister(){
-        saveObject(registerMap, System.getProperty("user.dir") + File.separator + "savedFiles" + File.separator);
+    public void saveRegister() {
+        saveObject(registerMap, System.getProperty("user.dir") + File.separator + "savedRegisters" + File.separator);
+    }
+
+    public void saveTree(Btree tree) {
+        saveObject(tree, System.getProperty("user.dir") + File.separator + "savedTree" + File.separator);
     }
 
     private void saveObject(Object object, String filename) {
@@ -45,8 +49,8 @@ public class BinFile implements Serializable {
     }
 
 
-    public Register loadRegister(int code, String filename) {
-        Register doc;
+    public void loadRegister() {
+        String filename = System.getProperty("user.dir") + File.separator + "savedRegisters";
         try {
             FileInputStream fin = new FileInputStream(filename);
             ObjectInputStream obj = new ObjectInputStream(fin);
@@ -56,8 +60,6 @@ public class BinFile implements Serializable {
         } catch (Exception e) {
             System.out.println("Erro ao carregar.");
         }
-        doc = registerMap.get(code);
-        return doc;
     }
 
     public Btree loadTree(String filename) {
@@ -69,7 +71,8 @@ public class BinFile implements Serializable {
             obj.close();
             System.out.println("Carregado com sucesso!");
         } catch (Exception e) {
-            System.out.println("Erro ao carregar.");
+            System.out.println("Erro ao carregar arquivo, gerando nova arvore");
+            return new Btree();
         }
         return btree;
     }

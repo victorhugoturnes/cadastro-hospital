@@ -8,11 +8,14 @@ import java.util.Scanner;
 
 public class Inserter extends Algorithm {
     private static int i = 0;
+
     static Btree insert(Register doc, Btree tree) {
 //        System.out.println(doc);
 //        System.out.println(i++);
-        BinFile.addRegister(doc);
-        tree = tree.addKey(doc);
+        if (new Searcher().find(doc.getCodigo(), tree).getCodigo() == 0) {
+            BinFile.addRegister(doc);
+            tree = tree.addKey(doc);
+        }
 //        System.out.println(tree);
         return tree;
     }
@@ -21,7 +24,7 @@ public class Inserter extends Algorithm {
     public Btree run(Btree tree) {
         try {
             insert(grab(), tree);
-        }catch (Exception e){
+        } catch (Exception e) {
             System.out.println("operacao invalida");
         }
         return tree;
