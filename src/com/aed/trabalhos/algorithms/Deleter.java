@@ -9,8 +9,8 @@ import java.util.Scanner;
 public class Deleter extends Algorithm {
 
     // Sobreposição do metodo run
-    // Metodo generico pra execucao da funcao base da classe
-    // Eh chamado pela superclasse para generalização do main
+    // Método generico pra execução da função base da classe
+    // É chamado pela superclasse para generalização do main
     @Override
     public Btree run(Btree tree) {
         Scanner scan = new Scanner(System.in);

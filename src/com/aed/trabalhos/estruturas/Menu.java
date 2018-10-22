@@ -33,11 +33,11 @@ public class Menu {
             case 3:
                 return new Updater();   // Altera um registro de medico
             case 4:
-                return new Searcher();  // Busca um registro de medico
+                return new Searcher();  // Busca e Imprime um registro de medico
             case 5:
                 return new Deleter();   // Remove um registro de medico
             case 6:
-                return new Searcher();
+                return new Searcher();  // Busca e Imprime um registro de medico
             case 7:
                 return new TreePrinter();   // Imprime a Arvore B
             default:
