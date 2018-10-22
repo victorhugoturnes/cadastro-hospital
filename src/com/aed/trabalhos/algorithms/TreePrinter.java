@@ -11,6 +11,7 @@ public class TreePrinter extends Algorithm {
     @Override
     public Btree run(Btree tree) {
         printTree(tree);
+        System.out.println("\n");
 //        System.out.println(tree);
         return tree;
     }

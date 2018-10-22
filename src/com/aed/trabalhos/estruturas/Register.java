@@ -104,7 +104,7 @@ public class Register implements Serializable {
 
     @Override
     public String toString() {
-        return "Register{" +
+        return codigo == 0 ? "Invalid Register" : "Register{" +
                 "\ncodigo=" + codigo +
                 "\nnome='" + nome + '\'' +
                 "\nsexo='" + sexo + '\'' +

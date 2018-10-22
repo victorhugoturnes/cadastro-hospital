@@ -19,6 +19,7 @@ public class Searcher extends Algorithm {
     }
 
     Register find(int key, Btree tree){
-        return tree.findPos(key).getRegister(key);
+        Btree find = tree.findPos(key);
+        return find == null ? new Register() : find.getRegister(key);
     }
 }

@@ -19,7 +19,11 @@ public class Inserter extends Algorithm {
 
     @Override
     public Btree run(Btree tree) {
-        insert(grab(), tree);
+        try {
+            insert(grab(), tree);
+        }catch (Exception e){
+            System.out.println("operacao invalida");
+        }
         return tree;
     }
 
@@ -28,6 +32,7 @@ public class Inserter extends Algorithm {
         System.out.println("Por favor insira o codigo (somente numeros):");
         Scanner scan = new Scanner(System.in);
         doc.setCodigo(scan.nextInt());
+        scan.nextLine();
         System.out.println("Por favor insira o nome");
         doc.setNome(scan.nextLine());
         System.out.println("Por favor insira o sexo");

@@ -11,7 +11,6 @@ public class Btree implements Serializable, Comparable<Btree> {
     private final int overflow = 1;
     public final ArrayList<Integer> keys;
     public final ArrayList<Btree> child;
-    private static int k = 0;
     private transient HashMap<Integer, Register> data;
 
     public Btree() {
@@ -93,7 +92,7 @@ public class Btree implements Serializable, Comparable<Btree> {
 
     public Btree findPos(int key) {
         for (int i = 0; i < keys.size(); i++) {
-            if (key < keys.get(i)) return child.get(i);
+            if (key < keys.get(i)) return child.isEmpty() ? null : child.get(i);
             else if (key == keys.get(i)) return this;
         }
         return child.get(child.size() - 1);

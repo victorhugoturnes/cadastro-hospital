@@ -12,7 +12,8 @@ public class Menu {
                 + "(4)Buscar dados de Medico:\n"
                 + "(5)Remover Medico:\n"
                 + "(6)Imprimir Cadastro:\n"
-                + "(7)Imprimir Arvore B:\n");
+                + "(7)Imprimir Arvore B:\n"
+                + "(Qualquer Outro) Sair");
     }
 
     public static Algorithm ParseInput() {
@@ -29,8 +30,7 @@ public class Menu {
             case 5:
                 return new Deleter();
             case 6:
-//                TreePrinter.printRegister(new Searcher().find());
-                return null;
+                return new Searcher();
             case 7:
                 return new TreePrinter();
             default:
