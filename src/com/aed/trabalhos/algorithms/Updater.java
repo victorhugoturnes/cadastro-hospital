@@ -23,51 +23,51 @@ public class Updater extends Algorithm {
                 + "(I)endereco\n"
                 + "(K)data de nascimento"
         );
-        char control = scan.next().charAt(0);
+        char control = scan.nextLine().charAt(0);
         switch (control) {
             case 'A':
                 System.out.println("Por favor insira o nome");
-                doc.setNome(scan.next());
+                doc.setNome(scan.nextLine());
                 break;
             case 'B':
                 System.out.println("Por favor insira o sexo");
-                doc.setSexo(scan.next());
+                doc.setSexo(scan.nextLine());
                 break;
             case 'C':
                 System.out.println("Por favor insira o cpf");
-                doc.setCpf(scan.next());
+                doc.setCpf(scan.nextLine());
                 break;
             case 'D':
                 System.out.println("Por favor insira o crm");
-                doc.setCrm(scan.next());
+                doc.setCrm(scan.nextLine());
                 break;
             case 'E':
                 System.out.println("Por favor insira a especialidade");
-                doc.setEspecialidade(scan.next());
+                doc.setEspecialidade(scan.nextLine());
                 break;
             case 'F':
                 System.out.println("Por favor insira o rg");
-                doc.setRg(scan.next());
+                doc.setRg(scan.nextLine());
                 break;
             case 'G':
                 System.out.println("Por favor insira o telefone");
-                doc.setTelefone(scan.next());
+                doc.setTelefone(scan.nextLine());
                 break;
             case 'H':
                 System.out.println("Por favor insira o celular");
-                doc.setCelular(scan.next());
+                doc.setCelular(scan.nextLine());
                 break;
             case 'i':
                 System.out.println("Por favor insira o email");
-                doc.setEmail(scan.next());
+                doc.setEmail(scan.nextLine());
                 break;
             case 'J':
                 System.out.println("Por favor insira o endereco");
-                doc.setEndereco(scan.next());
+                doc.setEndereco(scan.nextLine());
                 break;
             default:
                 System.out.println("Por favor insira a data de nascimento");
-                doc.setDataNascimento(scan.next());
+                doc.setDataNascimento(scan.nextLine());
         }
         return tree;
     }

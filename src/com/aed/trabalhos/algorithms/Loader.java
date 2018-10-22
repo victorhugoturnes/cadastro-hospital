@@ -52,7 +52,6 @@ public class Loader extends Algorithm {
         doc.setEmail(parameter());
         doc.setEndereco(parameter());
         doc.setDataNascimento(parameter());
-        BinFile.addRegister(doc);
         return doc;
     }
 

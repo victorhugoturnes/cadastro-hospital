@@ -1,5 +1,6 @@
 package com.aed.trabalhos.algorithms;
 
+import com.aed.trabalhos.estruturas.BinFile;
 import com.aed.trabalhos.estruturas.Btree;
 import com.aed.trabalhos.estruturas.Register;
 
@@ -10,6 +11,7 @@ public class Inserter extends Algorithm {
     static Btree insert(Register doc, Btree tree) {
 //        System.out.println(doc);
 //        System.out.println(i++);
+        BinFile.addRegister(doc);
         tree = tree.addKey(doc);
 //        System.out.println(tree);
         return tree;
@@ -27,27 +29,27 @@ public class Inserter extends Algorithm {
         Scanner scan = new Scanner(System.in);
         doc.setCodigo(scan.nextInt());
         System.out.println("Por favor insira o nome");
-        doc.setNome(scan.next());
+        doc.setNome(scan.nextLine());
         System.out.println("Por favor insira o sexo");
-        doc.setSexo(scan.next());
+        doc.setSexo(scan.nextLine());
         System.out.println("Por favor insira o cpf");
-        doc.setCpf(scan.next());
+        doc.setCpf(scan.nextLine());
         System.out.println("Por favor insira o crm");
-        doc.setCrm(scan.next());
+        doc.setCrm(scan.nextLine());
         System.out.println("Por favor insira a especialidade");
-        doc.setEspecialidade(scan.next());
+        doc.setEspecialidade(scan.nextLine());
         System.out.println("Por favor insira o rg");
-        doc.setRg(scan.next());
+        doc.setRg(scan.nextLine());
         System.out.println("Por favor insira o telefone");
-        doc.setTelefone(scan.next());
+        doc.setTelefone(scan.nextLine());
         System.out.println("Por favor insira o celular");
-        doc.setCelular(scan.next());
+        doc.setCelular(scan.nextLine());
         System.out.println("Por favor insira o email");
-        doc.setEmail(scan.next());
+        doc.setEmail(scan.nextLine());
         System.out.println("Por favor insira o endereco");
-        doc.setEndereco(scan.next());
+        doc.setEndereco(scan.nextLine());
         System.out.println("Por favor insira a data de nascimento");
-        doc.setDataNascimento(scan.next());
+        doc.setDataNascimento(scan.nextLine());
 
         return doc;
     }

@@ -2,17 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ecdb69e6-c160-470a-8a44-bec10ee11942" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cadastro-hospital/com/aed/trabalhos/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cadastro-hospital/com/aed/trabalhos/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cadastro-hospital/com/aed/trabalhos/algorithms/Loader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cadastro-hospital/com/aed/trabalhos/algorithms/Loader.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/cadastro-hospital/com/aed/trabalhos/algorithms/Searcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cadastro-hospital/com/aed/trabalhos/algorithms/Searcher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cadastro-hospital/com/aed/trabalhos/algorithms/TreePrinter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cadastro-hospital/com/aed/trabalhos/algorithms/TreePrinter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cadastro-hospital/com/aed/trabalhos/estruturas/BinFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cadastro-hospital/com/aed/trabalhos/estruturas/BinFile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cadastro-hospital/com/aed/trabalhos/estruturas/Btree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cadastro-hospital/com/aed/trabalhos/estruturas/Btree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cadastro-hospital/com/aed/trabalhos/estruturas/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cadastro-hospital/com/aed/trabalhos/estruturas/Menu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Searcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Searcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/cadastro-hospital/com/aed/trabalhos/algorithms/Updater.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cadastro-hospital/com/aed/trabalhos/algorithms/Updater.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/cadastro-hospital/com/aed/trabalhos/estruturas/Register.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cadastro-hospital/com/aed/trabalhos/estruturas/Register.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Deleter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Deleter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Inserter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Inserter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Loader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Updater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Updater.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/aed/trabalhos/estruturas/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aed/trabalhos/estruturas/Register.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -59,24 +57,28 @@
     <session id="633289984">
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2034" />
-          <entry key="txt" value="67" />
+          <entry key="java" value="2080" />
+          <entry key="txt" value="80" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2034" />
-          <entry key="PLAIN_TEXT" value="67" />
+          <entry key="JAVA" value="2080" />
+          <entry key="PLAIN_TEXT" value="80" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="8" />
+          <entry key="iml" value="1" />
+          <entry key="java" value="14" />
+          <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="8" />
+          <entry key="Enforced Plain Text" value="1" />
+          <entry key="JAVA" value="14" />
+          <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
     </session>
@@ -84,22 +86,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
-              <caret line="48" selection-start-line="48" selection-end-line="48" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Inserter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="28" selection-start-line="28" selection-end-line="49" selection-end-column="43" />
+            <state relative-caret-position="714">
+              <caret line="42" column="58" lean-forward="true" selection-start-line="42" selection-start-column="58" selection-end-line="42" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -108,42 +98,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/estruturas/Menu.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/estruturas/BinFile.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#338#339#0" expanded="true" />
-                <element signature="e#371#372#0" expanded="true" />
-                <element signature="e#472#473#0" expanded="true" />
-                <element signature="e#525#526#0" expanded="true" />
-                <element signature="e#573#574#0" expanded="true" />
-                <element signature="e#624#625#0" expanded="true" />
-                <element signature="e#661#662#0" expanded="true" />
-                <element signature="e#751#752#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/cadastro-hospital.iml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/TreePrinter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
-              <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+              <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -152,79 +115,69 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Updater.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="69" column="43" selection-end-line="74" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/estruturas/Btree.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="114" column="33" selection-start-line="114" selection-start-column="33" selection-end-line="114" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Searcher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/estruturas/Header.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/estruturas/Register.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="542">
-              <caret line="118" column="19" selection-start-line="118" selection-start-column="19" selection-end-line="118" selection-end-column="19" />
+            <state relative-caret-position="187">
+              <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
               <folding>
-                <element signature="e#281#282#0" expanded="true" />
-                <element signature="e#310#311#0" expanded="true" />
-                <element signature="e#351#352#0" expanded="true" />
-                <element signature="e#387#388#0" expanded="true" />
-                <element signature="e#485#486#0" expanded="true" />
-                <element signature="e#517#518#0" expanded="true" />
-                <element signature="e#615#616#0" expanded="true" />
-                <element signature="e#647#648#0" expanded="true" />
-                <element signature="e#741#742#0" expanded="true" />
-                <element signature="e#771#772#0" expanded="true" />
-                <element signature="e#865#866#0" expanded="true" />
-                <element signature="e#895#896#0" expanded="true" />
-                <element signature="e#1029#1030#0" expanded="true" />
-                <element signature="e#1079#1080#0" expanded="true" />
-                <element signature="e#1169#1170#0" expanded="true" />
-                <element signature="e#1197#1198#0" expanded="true" />
-                <element signature="e#1311#1312#0" expanded="true" />
-                <element signature="e#1351#1352#0" expanded="true" />
-                <element signature="e#1461#1462#0" expanded="true" />
-                <element signature="e#1499#1500#0" expanded="true" />
-                <element signature="e#1601#1602#0" expanded="true" />
-                <element signature="e#1635#1636#0" expanded="true" />
-                <element signature="e#1749#1750#0" expanded="true" />
-                <element signature="e#1789#1790#0" expanded="true" />
-                <element signature="e#1927#1928#0" expanded="true" />
-                <element signature="e#1979#1980#0" expanded="true" />
+                <element signature="e#528#529#0" expanded="true" />
+                <element signature="e#585#586#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Deleter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Updater.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="41" lean-forward="true" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Algorithm.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/arvoreB.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/register.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="77" lean-forward="true" selection-start-line="5" selection-start-column="77" selection-end-line="5" selection-end-column="77" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Loader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="918">
+              <caret line="54" selection-start-line="54" selection-end-line="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -239,6 +192,14 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>next</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>nextLine</replace>
+    </replaceStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="PUSH_TAGS">
@@ -249,17 +210,17 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/com/aed/trabalhos/estruturas/Header.java" />
-        <option value="$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Inserter.java" />
-        <option value="$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Deleter.java" />
         <option value="$PROJECT_DIR$/src/com/aed/trabalhos/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Loader.java" />
         <option value="$PROJECT_DIR$/src/com/aed/trabalhos/estruturas/BinFile.java" />
         <option value="$PROJECT_DIR$/src/com/aed/trabalhos/estruturas/Menu.java" />
         <option value="$PROJECT_DIR$/src/com/aed/trabalhos/estruturas/Btree.java" />
         <option value="$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/TreePrinter.java" />
         <option value="$PROJECT_DIR$/src/com/aed/trabalhos/estruturas/Register.java" />
         <option value="$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Searcher.java" />
+        <option value="$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Loader.java" />
+        <option value="$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Inserter.java" />
         <option value="$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Updater.java" />
+        <option value="$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Deleter.java" />
       </list>
     </option>
   </component>
@@ -269,7 +230,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-11" />
     <option name="width" value="1943" />
     <option name="height" value="2102" />
@@ -324,8 +285,9 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540182133710" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540184458737" />
     <property name="last_opened_file_path" value="C:/BinFileTeste" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -393,26 +355,34 @@
       <option name="project" value="LOCAL" />
       <updated>1540180439766</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="update works">
+      <created>1540182175924</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1540182175924</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34045000" />
+    <option name="totallyTimeSpent" value="36440000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="2208" height="1208" extended-state="6" />
+    <frame x="-6" y="0" width="1110" height="1201" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13813953" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2823194" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection Results" weight="0.32992566" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2936803" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32992566" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.29560336" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3986989" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -420,8 +390,8 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.329718" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32899627" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32899627" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32834426" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -442,7 +412,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Salva e carrega a arvore binaria inteira" />
     <MESSAGE value="find should be working&#10;&#10;print tree should now conform to standard" />
-    <option name="LAST_COMMIT_MESSAGE" value="find should be working&#10;&#10;print tree should now conform to standard" />
+    <MESSAGE value="update works" />
+    <option name="LAST_COMMIT_MESSAGE" value="update works" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -459,36 +430,9 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Deleter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Algorithm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/ArrayList.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/String.java" />
     <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Random.java" />
-    <entry file="file://$PROJECT_DIR$/arvoreB.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Loader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="54" column="15" selection-start-line="54" selection-start-column="15" selection-end-line="54" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/estruturas/BinFile.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -548,20 +492,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/estruturas/Btree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="114" column="33" selection-start-line="114" selection-start-column="33" selection-end-line="114" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/estruturas/Register.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="542">
-          <caret line="118" column="19" selection-start-line="118" selection-start-column="19" selection-end-line="118" selection-end-column="19" />
+        <state relative-caret-position="136">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
           <folding>
             <element signature="e#281#282#0" expanded="true" />
             <element signature="e#310#311#0" expanded="true" />
@@ -593,10 +527,77 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/estruturas/Btree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="26" column="30" lean-forward="true" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Algorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/arvoreB.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cadastro-hospital.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/register.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="77" lean-forward="true" selection-start-line="5" selection-start-column="77" selection-end-line="5" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Updater.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="41" lean-forward="true" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/TreePrinter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
-          <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Inserter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="58" lean-forward="true" selection-start-line="42" selection-start-column="58" selection-end-line="42" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Deleter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Loader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -605,27 +606,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Searcher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Inserter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="28" selection-start-line="28" selection-end-line="49" selection-end-column="43" />
+        <state relative-caret-position="187">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Updater.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="69" column="43" selection-end-line="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#528#529#0" expanded="true" />
+            <element signature="e#585#586#0" expanded="true" />
           </folding>
         </state>
       </provider>
