@@ -3,6 +3,7 @@ package com.aed.trabalhos.estruturas;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 
 public class Btree implements Serializable, Comparable<Btree> {
 
@@ -11,10 +12,12 @@ public class Btree implements Serializable, Comparable<Btree> {
     public final ArrayList<Integer> keys;
     public final ArrayList<Btree> child;
     private static int k = 0;
+    private transient HashMap<Integer, Register> data;
 
     public Btree() {
         this.keys = new ArrayList<>();
         this.child = new ArrayList<>();
+        data = new HashMap<>();
     }
 
     public Btree addKey(Register doc) {
@@ -25,7 +28,19 @@ public class Btree implements Serializable, Comparable<Btree> {
 //            System.out.println("PosSplit " + root);
             return root;
         }
+        updateData();
         return this;
+    }
+
+    public Register getRegister(int key) {
+        return data.containsKey(key)
+                ? data.get(key)
+                : new Register();
+    }
+
+    private void updateData() {
+        data.clear();
+        keys.forEach(key -> data.put(key, BinFile.getRegister(key)));
     }
 
     public Boolean addKey(int key) {
@@ -33,10 +48,9 @@ public class Btree implements Serializable, Comparable<Btree> {
         if (child.size() == 0) {
             keys.add(key);
             Collections.sort(keys);
-        } else if (findPos(key).addKey(key)) {
-//            System.out.println("PreSplit " + this);
-            split(this, findPos(key));
-//            System.out.println("PosSplit " + this);
+        } else if (findPos(key) != this) {
+            if (findPos(key).addKey(key))
+                split(this, findPos(key));
         }
         return keys.size() >= maxSize + overflow;
     }
@@ -75,9 +89,10 @@ public class Btree implements Serializable, Comparable<Btree> {
 //        System.out.println("left: " + left);
     }
 
-    private Btree findPos(int key) {
+    public Btree findPos(int key) {
         for (int i = 0; i < keys.size(); i++) {
             if (key < keys.get(i)) return child.get(i);
+            else if (key == keys.get(i)) return this;
         }
         return child.get(child.size() - 1);
     }
@@ -97,7 +112,7 @@ public class Btree implements Serializable, Comparable<Btree> {
             }
 */
         } else builder.append("[]");
-        return keys.toString() + " childs:" + child.size() + builder;
+        return keys.toString();// + " childs:" + child.size() + builder;
 
     }
 
@@ -105,6 +120,7 @@ public class Btree implements Serializable, Comparable<Btree> {
     public int compareTo(Btree o) {
         return Integer.compare(this.keys.get(0), o.keys.get(0));
     }
+
 }
 
 

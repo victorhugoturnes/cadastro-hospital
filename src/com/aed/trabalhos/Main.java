@@ -41,7 +41,7 @@ public class Main {
         child3.addKey(600);
         */
         
-        /*
+//        /*
         try {
             Btree tree = new Btree();
             while (true) {
@@ -52,10 +52,6 @@ public class Main {
         } catch (Exception e) {
 
         }
-        */
-
-//        Btree tree = new Btree();
-//        Loader loader = new Loader();
-//        System.out.println(loader.run(tree));
+//        */
     }
 }

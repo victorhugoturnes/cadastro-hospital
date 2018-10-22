@@ -29,7 +29,7 @@ public class Menu {
             case 5:
                 return new Deleter();
             case 6:
-                TreePrinter.printRegister(new Searcher().find());
+//                TreePrinter.printRegister(new Searcher().find());
                 return null;
             case 7:
                 return new TreePrinter();

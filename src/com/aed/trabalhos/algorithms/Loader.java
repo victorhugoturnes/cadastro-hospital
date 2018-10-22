@@ -1,5 +1,6 @@
 package com.aed.trabalhos.algorithms;
 
+import com.aed.trabalhos.estruturas.BinFile;
 import com.aed.trabalhos.estruturas.Btree;
 import com.aed.trabalhos.estruturas.Register;
 
@@ -51,6 +52,7 @@ public class Loader extends Algorithm {
         doc.setEmail(parameter());
         doc.setEndereco(parameter());
         doc.setDataNascimento(parameter());
+        BinFile.addRegister(doc);
         return doc;
     }
 
