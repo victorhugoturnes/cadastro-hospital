@@ -5,12 +5,12 @@ import com.aed.trabalhos.estruturas.Btree;
 import java.util.Collections;
 import java.util.Scanner;
 
-// Classe para os metodos que deletam nodes de Arvore B
+// Classe para os metodos de Remoção
 public class Deleter extends Algorithm {
 
     // Sobreposição do metodo run
     // Metodo generico pra execucao da funcao base da classe
-    // Eh chamado pela superclasse para generalizacao do main
+    // Eh chamado pela superclasse para generalização do main
     @Override
     public Btree run(Btree tree) {
         Scanner scan = new Scanner(System.in);

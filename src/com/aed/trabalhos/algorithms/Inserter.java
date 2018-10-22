@@ -6,30 +6,41 @@ import com.aed.trabalhos.estruturas.Register;
 
 import java.util.Scanner;
 
+// Classe para os metodos de Inserção
 public class Inserter extends Algorithm {
     private static int i = 0;
 
+    // Insere registro de medico na Arvore B
+    // - Recebe um objeto Registro e Arvore B
+    // - Retorna Arvore B com o registro inserido
     static Btree insert(Register doc, Btree tree) {
 //        System.out.println(doc);
 //        System.out.println(i++);
-        if (new Searcher().find(doc.getCodigo(), tree).getCodigo() == 0) {
+
+        // Busca o registro
+        if (new Searcher().find(doc.getCodigo(), tree).getCodigo() == 0) {   // Se o registro ainda não foi adicionado, insere
             BinFile.addRegister(doc);
             tree = tree.addKey(doc);
         }
 //        System.out.println(tree);
-        return tree;
+        return tree;    // Retorna Arvore B
     }
 
+    // Sobreposição do metodo run
+    // Metodo generico pra execucao da funcao base da classe
+    // Eh chamado pela superclasse para generalizacao do main
     @Override
     public Btree run(Btree tree) {
         try {
-            insert(grab(), tree);
+            insert(grab(), tree);  // Insere novo registro de medico na Arvore B
         } catch (Exception e) {
             System.out.println("operacao invalida");
         }
-        return tree;
+        return tree;  // Retorna Arvore B
     }
 
+    // Metodo que solicita e atribui valores do registro de medico
+    // - Atribui valores a partir do input do usuario
     private Register grab() {
         Register doc = new Register();
         System.out.println("Por favor insira o codigo (somente numeros):");
@@ -59,6 +70,6 @@ public class Inserter extends Algorithm {
         System.out.println("Por favor insira a data de nascimento");
         doc.setDataNascimento(scan.nextLine());
 
-        return doc;
+        return doc;  // Retorna registro com os dados atribuidos
     }
 }
