@@ -11,7 +11,7 @@ import java.util.regex.Pattern;
 
 public class Loader extends Algorithm {
 
-    private String directory = System.getProperty("user.dir") + File.separator + "nputs" + File.separator;
+    private String directory = System.getProperty("user.dir") + File.separator + "inputs" + File.separator;
     private String line;
     private Matcher matcher;
     private Btree tree;

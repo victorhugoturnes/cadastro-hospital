@@ -6,7 +6,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/cadastro-hospital/com/aed/trabalhos/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cadastro-hospital/com/aed/trabalhos/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/cadastro-hospital/com/aed/trabalhos/algorithms/Deleter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cadastro-hospital/com/aed/trabalhos/algorithms/Deleter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cadastro-hospital/com/aed/trabalhos/algorithms/Inserter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cadastro-hospital/com/aed/trabalhos/algorithms/Inserter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/cadastro-hospital/com/aed/trabalhos/algorithms/Loader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cadastro-hospital/com/aed/trabalhos/algorithms/Loader.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/cadastro-hospital/com/aed/trabalhos/algorithms/Searcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cadastro-hospital/com/aed/trabalhos/algorithms/Searcher.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/cadastro-hospital/com/aed/trabalhos/algorithms/TreePrinter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cadastro-hospital/com/aed/trabalhos/algorithms/TreePrinter.class" afterDir="false" />
@@ -17,8 +16,7 @@
       <change beforePath="$PROJECT_DIR$/out/production/cadastro-hospital/com/aed/trabalhos/estruturas/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cadastro-hospital/com/aed/trabalhos/estruturas/Menu.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Deleter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Deleter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Loader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Searcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Searcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/aed/trabalhos/estruturas/BinFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aed/trabalhos/estruturas/BinFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/aed/trabalhos/estruturas/Btree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aed/trabalhos/estruturas/Btree.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -65,28 +63,35 @@
     <session id="633289984">
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2080" />
+          <entry key="java" value="3627" />
           <entry key="txt" value="80" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2080" />
+          <entry key="JAVA" value="3627" />
           <entry key="PLAIN_TEXT" value="80" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="iml" value="1" />
-          <entry key="java" value="14" />
+          <entry key="java" value="20" />
           <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Enforced Plain Text" value="1" />
-          <entry key="JAVA" value="14" />
+          <entry key="JAVA" value="20" />
           <entry key="PLAIN_TEXT" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.opened" value="1" />
         </counts>
       </usages-collector>
     </session>
@@ -116,88 +121,23 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Inserter.java">
+        <entry file="file://$PROJECT_DIR$/cadastro-hospital.iml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Searcher.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-              <folding>
-                <element signature="e#528#529#0" expanded="true" />
-                <element signature="e#585#586#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Deleter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="26" lean-forward="true" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1258#1259#0" expanded="true" />
-                <element signature="e#1284#1285#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Loader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="105" selection-start-line="13" selection-start-column="105" selection-end-line="13" selection-end-column="105" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/estruturas/Header.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/estruturas/Menu.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="204">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/estruturas/BinFile.java">
+        <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Deleter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="31" column="111" selection-start-line="31" selection-start-column="111" selection-end-line="31" selection-end-column="111" />
+            <state relative-caret-position="654">
+              <caret line="49" column="23" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#338#339#0" expanded="true" />
-                <element signature="e#381#382#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -206,8 +146,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/estruturas/Btree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-891">
-              <caret line="41" column="21" lean-forward="true" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
+            <state relative-caret-position="1564">
+              <caret line="95" selection-start-line="95" selection-end-line="95" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Inserter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -218,11 +170,37 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="48" selection-start-line="48" selection-end-line="48" />
+            <state relative-caret-position="816">
+              <caret line="55" selection-start-line="55" selection-end-line="55" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Loader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="13" column="83" selection-start-line="13" selection-start-column="83" selection-end-line="13" selection-end-column="83" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/arvoreB.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/register.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="77" selection-start-line="5" selection-start-column="77" selection-end-line="5" selection-end-column="77" />
             </state>
           </provider>
         </entry>
@@ -256,15 +234,15 @@
         <option value="$PROJECT_DIR$/src/com/aed/trabalhos/estruturas/Header.java" />
         <option value="$PROJECT_DIR$/src/com/aed/trabalhos/Main.java" />
         <option value="$PROJECT_DIR$/src/com/aed/trabalhos/estruturas/Menu.java" />
-        <option value="$PROJECT_DIR$/src/com/aed/trabalhos/estruturas/Btree.java" />
         <option value="$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/TreePrinter.java" />
         <option value="$PROJECT_DIR$/src/com/aed/trabalhos/estruturas/Register.java" />
         <option value="$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Inserter.java" />
         <option value="$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Updater.java" />
         <option value="$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Searcher.java" />
-        <option value="$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Deleter.java" />
-        <option value="$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Loader.java" />
         <option value="$PROJECT_DIR$/src/com/aed/trabalhos/estruturas/BinFile.java" />
+        <option value="$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Loader.java" />
+        <option value="$PROJECT_DIR$/src/com/aed/trabalhos/estruturas/Btree.java" />
+        <option value="$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Deleter.java" />
       </list>
     </option>
   </component>
@@ -275,10 +253,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="4" />
-    <option name="y" value="-15" />
-    <option name="width" value="955" />
-    <option name="height" value="1071" />
+    <option name="width" value="1918" />
+    <option name="height" value="1014" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -287,7 +263,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -324,13 +299,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540184458737" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540228966098" />
     <property name="last_opened_file_path" value="C:/BinFileTeste" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
@@ -378,6 +353,7 @@
       <updated>1540078326755</updated>
       <workItem from="1540078335046" duration="5978000" />
       <workItem from="1540142692339" duration="22263000" />
+      <workItem from="1540230804254" duration="4000" />
     </task>
     <task id="LOCAL-00001" summary="Salva e carrega a arvore binaria inteira">
       <created>1540149469205</created>
@@ -411,13 +387,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38210000" />
+    <option name="totallyTimeSpent" value="44555000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2" y="-21" width="1924" height="1083" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="2208" height="1208" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2497332" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13953489" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -426,16 +401,16 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32992566" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.29509905" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49906978" weight="0.29460967" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3986989" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50093025" side_tool="true" weight="0.29460967" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32899627" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.3274244" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32713756" />
       <window_info anchor="bottom" id="Inspection Results" order="12" weight="0.32992566" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -466,10 +441,18 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Searcher.java</url>
           <line>20</line>
-          <properties class="com.aed.trabalhos.algorithms.Searcher" method="find">
+          <properties class="com.aed.trabalhos.algorithms.Searcher">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Deleter.java</url>
+          <line>24</line>
+          <properties class="com.aed.trabalhos.algorithms.Deleter" method="delete">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -494,26 +477,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/arvoreB.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cadastro-hospital.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/register.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="77" lean-forward="true" selection-start-line="5" selection-start-column="77" selection-end-line="5" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Updater.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="23" column="41" lean-forward="true" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -524,16 +491,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Inserter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Searcher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -541,48 +498,6 @@
           <folding>
             <element signature="e#528#529#0" expanded="true" />
             <element signature="e#585#586#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Deleter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="26" lean-forward="true" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1258#1259#0" expanded="true" />
-            <element signature="e#1284#1285#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Loader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="105" selection-start-line="13" selection-start-column="105" selection-end-line="13" selection-end-column="105" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/estruturas/Btree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-891">
-          <caret line="41" column="21" lean-forward="true" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -598,9 +513,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
           <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -608,10 +520,72 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="31" column="111" selection-start-line="31" selection-start-column="111" selection-end-line="31" selection-end-column="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cadastro-hospital.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/estruturas/Btree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1564">
+          <caret line="95" selection-start-line="95" selection-end-line="95" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#338#339#0" expanded="true" />
-            <element signature="e#381#382#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Inserter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Loader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="13" column="83" selection-start-line="13" selection-start-column="83" selection-end-line="13" selection-end-column="83" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/arvoreB.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/register.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="77" selection-start-line="5" selection-start-column="77" selection-end-line="5" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Deleter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="654">
+          <caret line="49" column="23" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

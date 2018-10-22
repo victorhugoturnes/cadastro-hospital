@@ -26,6 +26,8 @@ public class Btree implements Serializable, Comparable<Btree> {
 //            System.out.println("PreSplit " + this);
             split(root, this);
 //            System.out.println("PosSplit " + root);
+            child.forEach(k -> k.updateData());
+            updateData();
             return root;
         }
         updateData();
@@ -38,7 +40,7 @@ public class Btree implements Serializable, Comparable<Btree> {
                 : new Register();
     }
 
-    private void updateData() {
+    public void updateData() {
         data.clear();
         keys.forEach(key -> data.put(key, BinFile.getRegister(key)));
     }
@@ -82,11 +84,11 @@ public class Btree implements Serializable, Comparable<Btree> {
         parent.child.remove(split);
         parent.child.add(right);
         parent.child.add(left);
+        right.updateData();
+        left.updateData();
+        parent.updateData();
         Collections.sort(parent.keys);
         Collections.sort(parent.child);
-//        System.out.println("parent: " + parent);
-//        System.out.println("right: " + right);
-//        System.out.println("left: " + left);
     }
 
     public Btree findPos(int key) {

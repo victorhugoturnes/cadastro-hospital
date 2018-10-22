@@ -12,52 +12,54 @@ public class Deleter extends Algorithm {
 //        new Searcher().find();
         System.out.println("please insert a key to be deleted");
         int key = scan.nextInt();
-        System.out.println("confirm the registry");
-        new Searcher().find(key, tree);
-        System.out.println("(Y)Delete\n(N)Cancel");
-        switch (scan.next().charAt(0)) {
-            case 'Y':
-                tree = delete(key, tree);
-            default:
-                break;
-        }
+//        System.out.println("confirm the registry");
+//        System.out.println(new Searcher().find(key, tree));
+//        System.out.println("(Y)Delete\n(N)Cancel");
+//        if (scan.next().charAt(0) == 'Y') {
+        delete(key, tree);
+        System.out.println("deleted register " + key);
+//        }
         return tree;
     }
 
-    private Btree delete(int key, Btree tree) {
-        if(tree.child.isEmpty()){
-            return deleteLeaf(key, tree);
+    private boolean delete(int key, Btree tree) {
+        if (tree.keys.contains(key)) {
+            if (tree.child.isEmpty()) {
+                tree.keys.remove(tree.keys.indexOf(key));
+                tree.updateData();
+                return tree.keys.size() < 2;
+            } else {
+                deleteNode(key, tree);
+                return tree.keys.size() < 2;
+            }
         } else {
-            return deleteNode(key, tree);
+            if (delete(key, tree.findPos(key))) {
+//                underflow(tree);
+            }
         }
-//        return null;
+        return false;
     }
 
-    private Btree deleteNode(int key, Btree tree) {
-        if(tree.child.size() <= 2){
-            return deleteNodeUnderflow(key, tree);
-        }else{
-            /*black magic everywherre*/
-            return tree;
-        }
-    }
+    private void underflow(Btree parent) {
+        for (int i = 0; i < parent.child.size(); i++) {
+            if(parent.child.get(i).keys.size() < 2){
+                if(i > 0 && parent.child.get(i-1).keys.size() > 2){
+//                    borrowPrev(parent.child.get(i-1), parent.child.get(i), parent);
+                } else if( i < parent.child.size() && parent.child.get(i+1).keys.size() > 2){
+//                    borrowNext(parent.child.get(i+1), parent.child.get(i), parent);
+                } else{
 
-    private Btree deleteNodeUnderflow(int key, Btree tree) {
-        return tree;
-    }
-
-    private Btree deleteLeaf(int key, Btree tree) {
-        if(tree.child.size() <= 2 ){
-            return deleteLeafUnderflow(key, tree);
-        }else{
-            tree.keys.remove(key);
-            Collections.sort(tree.keys);
-            return tree;
+                }
+            }
         }
     }
 
-    private Btree deleteLeafUnderflow(int key, Btree tree) {
-        /*black magic goes here*/
-        return tree;
+    private void deleteNode(int key, Btree tree) {
+        int index = tree.keys.indexOf(key);
+        int movedKey = tree.child.get(index+1).keys.get(0);
+        tree.keys.remove(tree.keys.indexOf(key));
+        tree.keys.add(movedKey);
+        delete(movedKey, tree.child.get(index+1));
+        Collections.sort(tree.keys);
     }
 }
