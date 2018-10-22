@@ -3,11 +3,17 @@ package com.aed.trabalhos.algorithms;
 import com.aed.trabalhos.estruturas.Btree;
 import com.aed.trabalhos.estruturas.Register;
 
+// Classe para metodos de impressão de dados da Arvore B
 public class TreePrinter extends Algorithm {
+
+    // Imprime um registro de medico
     public static void printRegister(Register register) {
         System.out.println(register);
     }
 
+    // Sobreposição do metodo run
+    // Metodo generico pra execucao da funcao base da classe
+    // Eh chamado pela superclasse para generalizacao do main
     @Override
     public Btree run(Btree tree) {
         printTree(tree);
@@ -15,7 +21,8 @@ public class TreePrinter extends Algorithm {
 //        System.out.println(tree);
         return tree;
     }
-    
+
+    // Imprime uma Arvore B
     private void printTree(Btree tree){
         int i = 0;
         while(printTree(tree, i)){
@@ -24,6 +31,7 @@ public class TreePrinter extends Algorithm {
         }
     }
 
+    // Verifica se existem mais niveis na arvore para serem printados
     private boolean printTree(Btree tree, int i) {
         Boolean continuum = true;
         if(i == 0){
