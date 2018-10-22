@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ecdb69e6-c160-470a-8a44-bec10ee11942" name="Default Changelist" comment="windows - linux incompatibilities">
-      <change beforePath="$PROJECT_DIR$/src/com/aed/trabalhos/estruturas/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aed/trabalhos/estruturas/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/aed/trabalhos/estruturas/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aed/trabalhos/estruturas/Register.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/aed/trabalhos/estruturas/Header.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aed/trabalhos/estruturas/Header.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,25 +24,25 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="27" />
+          <entry key="java" value="28" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="27" />
+          <entry key="JAVA" value="28" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="7422" />
+          <entry key="java" value="7936" />
           <entry key="txt" value="47" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="7422" />
+          <entry key="JAVA" value="7936" />
           <entry key="PLAIN_TEXT" value="47" />
         </counts>
       </usages-collector>
@@ -119,14 +118,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/estruturas/Menu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="786">
+            <state relative-caret-position="588">
               <caret line="41" column="65" selection-start-line="41" selection-start-column="65" selection-end-line="41" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/estruturas/Header.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="748">
+              <caret line="52" column="9" lean-forward="true" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -152,8 +160,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/estruturas/Register.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="484">
+              <caret line="135" column="4" selection-start-line="135" selection-start-column="4" selection-end-line="136" selection-end-column="71" />
             </state>
           </provider>
         </entry>
@@ -208,7 +216,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/aed/trabalhos/estruturas/Header.java" />
         <option value="$PROJECT_DIR$/src/com/aed/trabalhos/Main.java" />
         <option value="$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/TreePrinter.java" />
         <option value="$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Inserter.java" />
@@ -220,6 +227,7 @@
         <option value="$PROJECT_DIR$/src/com/aed/trabalhos/algorithms/Deleter.java" />
         <option value="$PROJECT_DIR$/src/com/aed/trabalhos/estruturas/Register.java" />
         <option value="$PROJECT_DIR$/src/com/aed/trabalhos/estruturas/Menu.java" />
+        <option value="$PROJECT_DIR$/src/com/aed/trabalhos/estruturas/Header.java" />
       </list>
     </option>
   </component>
@@ -332,7 +340,7 @@
       <workItem from="1540078335046" duration="5978000" />
       <workItem from="1540142692339" duration="22263000" />
       <workItem from="1540230804254" duration="4000" />
-      <workItem from="1540236655829" duration="1693000" />
+      <workItem from="1540236655829" duration="2085000" />
     </task>
     <task id="LOCAL-00001" summary="Salva e carrega a arvore binaria inteira">
       <created>1540149469205</created>
@@ -366,7 +374,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46248000" />
+    <option name="totallyTimeSpent" value="46640000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -432,13 +440,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/estruturas/Header.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -527,20 +528,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/estruturas/Register.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/estruturas/Menu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="786">
+        <state relative-caret-position="588">
           <caret line="41" column="65" selection-start-line="41" selection-start-column="65" selection-end-line="41" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/estruturas/Register.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="135" column="4" selection-start-line="135" selection-start-column="4" selection-end-line="136" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/aed/trabalhos/estruturas/Header.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="52" column="9" lean-forward="true" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
         </state>
       </provider>
     </entry>
