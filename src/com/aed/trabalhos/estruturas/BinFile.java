@@ -6,12 +6,12 @@ import java.util.Map;
 
 public class BinFile implements Serializable {
     private Header cabecalho;
-    public static Map<Integer, Register> registerMap = new HashMap<>();
+    private static Map<Integer, Register> registerMap = new HashMap<>();
 
     public BinFile() {
     }
 
-    public static Register getRegister(Integer key) {
+    static Register getRegister(Integer key) {
         return registerMap.get(key);
     }
 
@@ -29,10 +29,10 @@ public class BinFile implements Serializable {
     }
 
     public void saveRegister(){
-        saveObject(registerMap, System.getProperty("user.dir") + "\\savedFiles\\");
+        saveObject(registerMap, System.getProperty("user.dir") + File.separator + "savedFiles" + File.separator);
     }
 
-    public void saveObject(Object object, String filename) {
+    private void saveObject(Object object, String filename) {
         try {
             FileOutputStream fout = new FileOutputStream(filename);
             ObjectOutputStream obj = new ObjectOutputStream(fout);
@@ -46,11 +46,11 @@ public class BinFile implements Serializable {
 
 
     public Register loadRegister(int code, String filename) {
-        Register doc = new Register();
+        Register doc;
         try {
             FileInputStream fin = new FileInputStream(filename);
             ObjectInputStream obj = new ObjectInputStream(fin);
-            registerMap = (HashMap) obj.readObject();
+            registerMap = (Map<Integer, Register>) obj.readObject();
             obj.close();
             System.out.println("Carregado com sucesso!");
         } catch (Exception e) {
