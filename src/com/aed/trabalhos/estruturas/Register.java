@@ -6,7 +6,7 @@ public class Register implements Serializable {
     private int codigo;
     private String nome, sexo, cpf, crm, especialidade, rg, telefone, celular, email, endereco, dataNascimento;
 
-    public int getCodigo() {
+    int getCodigo() {
         return codigo;
     }
 
@@ -105,18 +105,18 @@ public class Register implements Serializable {
     @Override
     public String toString() {
         return "Register{" +
-                "codigo=" + codigo +
-                " nome='" + nome + '\'' +
-                " sexo='" + sexo + '\'' +
-                " cpf='" + cpf + '\'' +
-                " crm='" + crm + '\'' +
-                " especialidade='" + especialidade + '\'' +
-                " rg='" + rg + '\'' +
-                " telefone='" + telefone + '\'' +
-                " celular='" + celular + '\'' +
-                " email='" + email + '\'' +
-                " endereco='" + endereco + '\'' +
-                " dataNascimento='" + dataNascimento + '\'' +
+                "\ncodigo=" + codigo +
+                "\nnome='" + nome + '\'' +
+                "\nsexo='" + sexo + '\'' +
+                "\ncpf='" + cpf + '\'' +
+                "\ncrm='" + crm + '\'' +
+                "\nespecialidade='" + especialidade + '\'' +
+                "\nrg='" + rg + '\'' +
+                "\ntelefone='" + telefone + '\'' +
+                "\ncelular='" + celular + '\'' +
+                "\nemail='" + email + '\'' +
+                "\nendereco='" + endereco + '\'' +
+                "\ndataNascimento='" + dataNascimento + '\'' +
                 '}';
     }
 }
