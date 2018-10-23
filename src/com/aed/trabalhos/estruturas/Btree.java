@@ -9,7 +9,7 @@ import java.util.HashMap;
 public class Btree implements Serializable, Comparable<Btree> {
 
     // Atributos da Arvore B
-    protected final int maxSize = 4;            // Quantidade maxima de chaves
+    private final int maxSize = 4;            // Quantidade maxima de chaves
     private final int overflow = 1;             // Atributo auxiliar para indicar overflow
     public final ArrayList<Integer> keys;       // Array para chaves
     public final ArrayList<Btree> child;        // Array para os nos filhos
@@ -33,7 +33,7 @@ public class Btree implements Serializable, Comparable<Btree> {
 //            System.out.println("PreSplit " + this);
             split(root, this);
 //            System.out.println("PosSplit " + root);
-            child.forEach(k -> k.updateData());
+            child.forEach(Btree::updateData);
             updateData();
             return root; // Retorna a nova raiz, contendo a Arvore B atualizada
         }
@@ -61,7 +61,7 @@ public class Btree implements Serializable, Comparable<Btree> {
     // Retorna um booleano, indicando se ha ou nao overflow no node
     // - Caso retorne verdadeiro, ha overflow
     // - Caso retorne falso, nao ha overflow
-    public Boolean addKey(int key) {
+    private Boolean addKey(int key) {
 //        System.out.println("adding " + key + " to " + this);
         if (child.size() == 0) {
             keys.add(key);
@@ -108,6 +108,7 @@ public class Btree implements Serializable, Comparable<Btree> {
         Collections.sort(parent.child);
     }
 
+    // Retorna o node da arvore onde a key se encontra, ou null caso a key nao esteja contida na arvore
     public Btree findPos(int key) {
         for (int i = 0; i < keys.size(); i++) {
             if (key < keys.get(i)) return child.isEmpty() ? null : child.get(i);
@@ -125,7 +126,7 @@ public class Btree implements Serializable, Comparable<Btree> {
 //            builder.append("\n");
             for (int i = 0; i < child.size(); i++) {
                 Btree c = child.get(i);
-                builder.append(" " + i + " [" + c.toString() + "]");
+                builder.append(" ").append(i).append(" [").append(c.toString()).append("]");
             }
 /*
             for (Btree c : this.child) {
@@ -137,6 +138,7 @@ public class Btree implements Serializable, Comparable<Btree> {
 
     }
 
+    // Possibilita o sort
     @Override
     public int compareTo(Btree o) {
         return Integer.compare(this.keys.get(0), o.keys.get(0));
