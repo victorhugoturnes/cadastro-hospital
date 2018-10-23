@@ -5,34 +5,45 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 
+// Classe para implementar Arvore B
 public class Btree implements Serializable, Comparable<Btree> {
 
-    protected final int maxSize = 4;
-    private final int overflow = 1;
-    public final ArrayList<Integer> keys;
-    public final ArrayList<Btree> child;
-    private transient HashMap<Integer, Register> data;
+    // Atributos da Arvore B
+    protected final int maxSize = 4;            // Quantidade maxima de chaves
+    private final int overflow = 1;             // Atributo auxiliar para indicar overflow
+    public final ArrayList<Integer> keys;       // Array para chaves
+    public final ArrayList<Btree> child;        // Array para os nos filhos
+    private transient HashMap<Integer, Register> data;  // Atributo para armazenar os registros de medicos
 
+    // Construtor da Arvore B
     public Btree() {
         this.keys = new ArrayList<>();
         this.child = new ArrayList<>();
         data = new HashMap<>();
     }
 
+
+    // Insere um registro de medico a Arvore B
+    // - Recebe um registro
+    // - Retorna a Arvore B atualizada, contendo o registro inserido
     public Btree addKey(Register doc) {
-        if (addKey(doc.getCodigo())) {
-            Btree root = new Btree();
+        // Chama o metodo sobrecarregado e retorna um booleano
+        if (addKey(doc.getCodigo())) {  // Caso 1: true -> houve overflow e eh feito o split
+            Btree root = new Btree(); // Cria uma nova instancia de Arvore B para nova raiz
 //            System.out.println("PreSplit " + this);
             split(root, this);
 //            System.out.println("PosSplit " + root);
             child.forEach(k -> k.updateData());
             updateData();
-            return root;
+            return root; // Retorna a nova raiz, contendo a Arvore B atualizada
         }
-        updateData();
-        return this;
+        updateData(); // Caso 2: false -> adiciona o registro normalmente
+        return this;  // Retorna a mesma raiz
     }
 
+    // Getter para Registro de Medico
+    // - Recebe um codigo de registro de medico
+    // - Retorna um Registro de medico, contendo todos os atributos de um medico
     public Register getRegister(int key) {
         updateData();
         return data.containsKey(key)
@@ -40,11 +51,16 @@ public class Btree implements Serializable, Comparable<Btree> {
                 : new Register();
     }
 
+    // Atualiza o atributo que contem os registros de medicos
     public void updateData() {
         data = new HashMap<>();
         keys.forEach(key -> data.put(key, BinFile.getRegister(key)));
     }
 
+    // Metodo addKey Sobrecarregado
+    // Retorna um booleano, indicando se ha ou nao overflow no node
+    // - Caso retorne verdadeiro, ha overflow
+    // - Caso retorne falso, nao ha overflow
     public Boolean addKey(int key) {
 //        System.out.println("adding " + key + " to " + this);
         if (child.size() == 0) {
@@ -57,6 +73,7 @@ public class Btree implements Serializable, Comparable<Btree> {
         return keys.size() >= maxSize + overflow;
     }
 
+    // Realiza a divisão de um node de Arvore B
     private void split(Btree parent, Btree split) {
 //        System.out.println("splitting");
         Btree right = new Btree();
@@ -99,6 +116,8 @@ public class Btree implements Serializable, Comparable<Btree> {
         return child.isEmpty() ? null : child.get(child.size() - 1);
     }
 
+    // Sobreposição do metodo toString
+    // - Retorna uma string formatada contendo os valores dos atributos
     @Override
     public String toString() {
         StringBuilder builder = new StringBuilder();
